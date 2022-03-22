@@ -1,0 +1,125 @@
+body {
+  padding: 2rem 5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.banners {
+  display: flex;
+  flex-direction: row;
+}
+
+.banner-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 160px;
+  height: 600px;
+  border: 1px solid #8383837c;
+  margin: 1rem;
+  animation: slide-in 5s infinite;
+}
+
+.banner-inner-container {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #8383837c;
+}
+
+.banner-image {
+  max-width: 95%;
+  max-height: 70%;
+  margin-top: 2rem;
+}
+
+.banner-name {
+  margin: 0 0.7rem;
+}
+
+.banner-price {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.banner-check-button {
+  margin-bottom: 1rem;
+  padding: 0.6rem 2.2rem;
+  border: none;
+  color: #fefefe;
+  background-color: orangered;
+}
+
+.banner-close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #838383;
+  background-color: transparent;
+  border: none;
+}
+
+.banner-close-button__sign {
+  font-size: 1.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.logo-rtb {
+  margin-right: 0.3rem;
+  color: red;
+  font-weight: 700;
+}
+
+.logo::before {
+  background: transparent;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 8px;
+  position: relative;
+  top: 40px;
+  left: 0;
+  border-top: 2px solid #8383837c;
+  border-bottom: 2px solid #8383837c;
+  margin-bottom: 10px;
+}
+
+.logo::after {
+  background: transparent;
+  content: "";
+  display: block;
+  position: relative;
+  top: -2px;
+  right: 5px;
+  margin-left: 1rem;
+  height: 6px;
+  width: 15px;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  33% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
