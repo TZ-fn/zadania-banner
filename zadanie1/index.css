@@ -1,0 +1,87 @@
+body {
+  padding: 2rem 5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 250px;
+  width: 300px;
+  border: 1px solid #8383837c;
+  padding: 3px;
+}
+
+.banners {
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2px;
+}
+
+.offer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 145px;
+  height: 90px;
+  border: 1px solid #8383837c;
+}
+
+.offer-image {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.offer-price {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.border-active {
+  border: 2px solid red;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  font-size: 2.2rem;
+}
+
+.logo-rtb {
+  margin-right: 0.3rem;
+  color: red;
+  font-weight: 600;
+}
+
+.logo::before {
+  background: transparent;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 8px;
+  position: relative;
+  top: 20px;
+  left: -38px;
+  border-top: 2px solid #8383837c;
+  border-bottom: 2px solid #8383837c;
+}
+
+.logo::after {
+  background: transparent;
+  content: "";
+  display: block;
+  position: relative;
+  top: -5px;
+  margin-left: 1rem;
+  height: 8px;
+  width: 20px;
+  border-top: 3px solid red;
+  border-bottom: 3px solid red;
+}
