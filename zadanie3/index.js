@@ -13,6 +13,7 @@ const endDateFormatted = new Intl.DateTimeFormat("pl-PL", {
 
 endDateContainer.append(endDateFormatted);
 
+countdown(endDate, counterContainer);
 const timer = setInterval(() => countdown(endDate, counterContainer), 1000);
 
 if (endDate - dateNow <= 0) {
